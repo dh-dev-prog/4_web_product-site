@@ -5,7 +5,7 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Cookie|Gloria+Hallelujah|Indie+Flower|Shadows+Into+Light+Two|Tangerine");
 @font-face {
   font-family: 'FontAwesome';
   src: url("font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -2485,14 +2485,13 @@ main {
   flex: 0 1 auto;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
-  padding: 1.6rem; }
+  padding: 2.3rem; }
 
 .card {
   flex: 1 0 auto;
   display: flex;
   flex-flow: column;
-  width: 250px;
+  width: 220px;
   margin: 0.8rem 0.8rem 0.8rem 0.8rem; }
 
 .card-sample {
@@ -2521,13 +2520,25 @@ main {
   position: absolute;
   right: 5%;
   bottom: 25%;
-  color: #280f43; }
+  color: #ea6c00; }
 
 .card-gloria {
   font-family: 'Gloria Hallelujah', cursive; }
 
 .card-indie {
   font-family: 'Indie Flower', cursive; }
+
+.card-amatic {
+  font-family: 'Amatic SC', cursive; }
+
+.card-cookie {
+  font-family: 'Cookie', cursive; }
+
+.card-tangerine {
+  font-family: 'Tangerine', cursive; }
+
+.card-shadows {
+  font-family: 'Shadows Into Light Two', cursive; }
 
 footer {
   flex: 0 0 90px;
