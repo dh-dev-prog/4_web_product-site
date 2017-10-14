@@ -1,0 +1,230 @@
+// Variables
+$middle-red-purple: #280f43;
+$chrome-yellow: #fdad00;
+$sunglow: #fdd231;
+$peach: #feeeb7;
+$spanish-orange: #ea6c00;
+$text-color: #fff;
+@import 'font-awesome/scss/font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower');
+
+/* Base */
+html,
+base {
+  height: 100%;
+}
+html {
+  font-size: 16px;
+}
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: linear-gradient(to right top, $sunglow, $chrome-yellow);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+i[class*="fa"] {
+  font-size: 1.5rem;
+  color: $text-color;
+}
+
+/* Nav */
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 0 0 40px;
+  padding: 0 0.8rem;
+  background-color: $chrome-yellow;
+  height: 100vh;
+}
+
+/* Main */
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  margin-right: 1.6rem;
+}
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 2%;
+  top: 1%;
+}
+
+/* Logo */
+
+.box {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5em;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.top-part {
+  position: absolute;
+  width: 15%;
+  height: 20%;
+  background-color: #fff;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+.f-top {
+  top: 5.1%;
+  left: 20%;
+}
+.l-top {
+  top: 5.1%;
+  right: 34%;
+}
+.f-middle-top {
+  position: absolute;
+  top: 20%;
+  left: 27%;
+  width: 20%;
+  height: 20%;
+  background-color: #fff;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.f-middle-second {
+  position: absolute;
+  top: 40%;
+  left: 27%;
+  width: 20%;
+  height: 20%;
+  background-color: #fff;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.main-part {
+  position: absolute;
+  width: 15%;
+  height: 40%;
+  background-color: #fff;
+}
+.f-main {
+  top: 25%;
+  left: 20%;
+}
+.l-main {
+  top: 25%;
+  right: 34%;
+}
+.f-bottom {
+  position: absolute;
+  bottom: 15.1%;
+  left: 20%;
+  width: 15%;
+  height: 20%;
+  background-color: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.l-bottom {
+  position: absolute;
+  bottom: 15.1%;
+  right: 34%;
+  width: 15%;
+  height: 20%;
+  background-color: #fff;
+  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.l-bottom-second {
+  position: absolute;
+  bottom: 15%;
+  right: 20.6%;
+  width: 15%;
+  height: 20%;
+  background-color: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+/* Main */
+
+.main-content {
+  padding: 1.5rem 0.8rem;
+  width: 100%;
+  height: 90vh; // need to specify height of container so items wrap
+}
+.card-list {
+  height: 100%; // specify the height of list compare to flex container so items wrap
+  flex: 0 1 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 1.6rem;
+}
+.card {
+  flex: 1 0 auto;
+  display: flex;
+  flex-flow: column;
+  width: 250px;
+  margin: 0.8rem 0.8rem 0.8rem 0.8rem;
+}
+.card-sample {
+  flex: 0 1 auto;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  background-color: $peach;
+  color: #333;
+}
+.card-caption {
+  position: relative;
+  padding: 0.8rem;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  text-transform: capitalize;
+}
+.from {
+  margin-top: 0.8em;
+  font-size: 0.7rem;
+  color: silver;
+}
+.type {
+  position: absolute;
+  right: 5%;
+  bottom: 25%;
+  color: $middle-red-purple;
+}
+.card-gloria {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.card-indie {
+  font-family: 'Indie Flower', cursive;
+}
+
+footer {
+  flex: 0 0 90px;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(61, 100, 158, .9);
+}
